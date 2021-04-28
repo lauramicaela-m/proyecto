@@ -5,29 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./assets/registro.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
-      type="text/css"
-      href="./assets/CSS/federiquito.css"
     />
   </head>
+
   <body>
     <header>
-      <a class="titulo" href="./index.html"> Delicias fedilly</a>
-      <div class="navbar">
-        <a class="link" href="./acercade.html">
-          Acerca de
-        </a>
-        <a class="link" href="#">
-          Contacto
-        </a>
+      <div>
+        <h1>Recibi nuestras recetas</h1>
       </div>
     </header>
-    <div class="contenido">
-      <form></form>
-    </div>
-    <footer>
-      Derechos Reservados @2021
-    </footer>
+    <main>
+      <form action="" method="POST" id="form">
+        <div class="form">
+          <div class="grupo">
+            <input type="text" name="" id="name" required />
+            <span class="barra"></span>
+            <label for=""> Nombre</label>
+          </div>
+          <div class="grupo">
+            <input type="email" name="" id="name" required />
+            <span class="barra"></span>
+            <label for=""> Email</label>
+          </div>
+          <div class="grupo">
+            <input type="password" name="" id="name" required />
+            <span class="barra"></span>
+            <label for=""> Contraseña </label>
+          </div>
+          <div>
+            <button type="submit">Suscribite</button>
+          </div>
+        </div>
+      </form>
+    </main>
   </body>
 </html>
