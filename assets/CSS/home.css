@@ -1,63 +1,59 @@
-*{box-sizing: border-box;} 
-
+* {
+  box-sizing: border-box;
+  font-family: "Questrial", sans-serif;
+}
 
 html {
   width: 100%;
   height: 100%;
- 
 }
 header {
   display: flex;
   width: 100%;
   align-items: center;
   background-color: white;
-  height: 100px;
+  height: 14%;
   justify-content: space-between;
   position: fixed;
   z-index: 100;
   box-shadow: 0px 1px 3px grey;
 }
 
-
 body {
   width: 100%;
   height: 100%;
-  background: #acb6e5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #355C7D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   margin: 0;
   padding: 0;
 }
 
-
-
-.imglogo{
+.imglogo {
   width: 80px;
   margin-left: 10%;
   padding: 10px;
 }
-  
 
-#check{
+#check {
   display: none;
 }
-.iconmenu{
+.iconmenu {
   display: none;
 }
 
-.menu{
-width: auto;
-float: right;
-margin-top: 30px;
-margin-right: 10%;
-
+.menu {
+  width: auto;
+  float: right;
+  margin-top: 30px;
+  margin-right: 10%;
 }
-.menu ul{
+.menu ul {
   display: flex;
-} 
+}
 
-.menu li{
-
+.menu li {
   list-style: none;
 }
 
@@ -65,18 +61,15 @@ margin-right: 10%;
   padding: 10px;
   text-decoration: none;
   color: black;
-  font-size:18px;
-  font-weight:bold; 
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.menu li a:hover{
-  color: paleturquoise;
- 
+.menu li a:hover {
+  color:purple;
 }
 
-
-
-.navbar{
+.navbar {
   margin: 0 1rem;
 }
 
@@ -90,39 +83,53 @@ main {
 }
 
 .contenido {
+  overflow-y: auto;
   width: 100%;
   height: 85%;
-  display: flex;
-  justify-content:center;
-} 
-.contenido .card{
-    width: 250px;
-    height: 250px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0 ,0 ,0.2);
-    overflow: hidden;
-    margin:20px;
-    text-align: center;
-    transition: all 0.25s;
-}
-.contenido .card:hover{
-  transform: translateY(-15px);
-  box-shadow: 0 12px 16px rgba(0, 0 ,0 ,0.2);
 }
 
-.contenido .card img{
+.contenido .cardgroup {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.contenido .subtitulo {
+  width: 85%;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.contenido .card {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  background-color: blanchedalmond;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+.contenido .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenido .card img {
   width: 330px;
   height: 220px;
 }
-.link{
+.link {
   font-size: 18px;
   margin: 0 0.5rem;
-  font-family: 'Questrial', sans-serif;
+  font-family: "Questrial", sans-serif;
   text-decoration: none;
 }
 
 a:link {
-  color: purple
+  color: purple;
 }
 
 footer {
@@ -131,48 +138,49 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background:white;
-  color: paleturquoise;
- 
-
+  background: white;
+  color: purple;
 }
 
-#check:checked ~ .menu{
- height: 180px;
-
+#check:checked ~ .menu {
+  height: 180px;
 }
 
-@media screen and ( max-width:900px) {
+@media screen and (max-width: 900px) {
   .iconmenu {
     display: block;
-    float: right;
-    padding: 10px;
-    font-size: 20px;
-    border: 1px solid  black;
     border-radius: 5px;
-    margin-top: 14px;
-    margin-right: 16px;
+    width: 30px;
+    height: 30px;
   }
 
-  .iconmenu:hover{
-    background-color: tomato
+  .botonmenu {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: url("../img/bars-solid.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .botonmenu:hover {
+    background-color: rgb(180, 74, 180);
   }
   .menu {
-    float: left;
-    margin-top: 0px;
-    width: 100%;
+    position: absolute;
+    top: 82px;
+    right: 0px;
+    margin: 0px;
+    width: 250px;
     height: 0px;
     overflow: hidden;
-    background-color: rgb(224, 113, 113)
-
+    background-color: rgb(199, 148, 195);
   }
-  .menu ul{
+  .menu ul {
     flex-direction: column;
-
   }
   .menu li a {
-    display: block
-    ;
+    display: block;
   }
-
 }
