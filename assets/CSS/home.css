@@ -143,33 +143,33 @@ footer {
 }
 
 #check:checked ~ .menu {
-  height: 180px;
+  height: 230px;
 }
 
 @media screen and (max-width: 900px) {
   .iconmenu {
     display: block;
-    border-radius: 5px;
+    
     width: 30px;
     height: 30px;
+    
   }
 
   .botonmenu {
-    border: 1px solid black;
-    width: 30px;
+   width: 30px;
     height: 30px;
-    border-radius: 5px;
-    background: url("../img/bars-solid.svg");
+   background: url("../img/bars-solid.svg");
     background-repeat: no-repeat;
     background-position: center;
+    margin-right: 1rem;
   }
 
   .botonmenu:hover {
-    background-color: rgb(180, 74, 180);
+    background-color: rgb(204, 130, 204);
   }
   .menu {
     position: absolute;
-    top: 82px;
+    top: 85px;
     right: 0px;
     margin: 0px;
     width: 250px;
