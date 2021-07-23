@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
-    <link rel="stylesheet" type="text/css" href="./assets/registro.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/CSS/disposicion.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/CSS/registro.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
@@ -14,30 +19,52 @@
   </head>
 
   <body>
-   <main>
-      <form action="" method="POST" id="form">
-        <div class="form">
-          <div> <h1>Registro</h1></div>
-          <div class="grupo">
-            <input type="text" name="" id="name" required />
-            <span class="barra"></span>
-            <label for=""> Nombre</label>
+    <header>
+      <img src="./assets/img/willowpatisserie.png" class="imglogo" />
+      <div class="botonmenu">
+        <label for="check" class="iconmenu"> </label>
+      </div>
+      <input type="checkbox" id="check" />
+      <nav class="menu">
+        <ul>
+          <li><a href="./index.html"> Home</a></li>
+          <li><a href="./acercade.html"> Acerca De</a></li>
+          <li><a href="./contacto.html"> Contacto</a></li>
+          <li><a href="./redessociales.html">Redes sociales</a></li>
+          <li><a href="./encontranosen.html"> Nos encontras en </a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="space"></div>
+      <div class="contenido-registro">
+        <form action="" method="POST" id="form">
+          <div class="form">
+            <div><h1>Registro</h1></div>
+            <div class="grupo">
+              <input class="input-form" type="text" name="" id="name" required />
+              <span class="barra"></span>
+              <label class="label-form" for=""> Nombre</label>
+            </div>
+            <div class="grupo">
+              <input class="input-form" type="email" name="" id="name" required />
+              <span class="barra"></span>
+              <label class="label-form" for=""> Email</label>
+            </div>
+            <div class="grupo">
+              <input class="input-form" type="password" name="" id="name" required />
+              <span class="barra"></span>
+              <label class="label-form" for=""> Contraseña </label>
+            </div>
+            <div>
+              <button type="submit">Suscribite</button>
+            </div>
           </div>
-          <div class="grupo">
-            <input type="email" name="" id="name" required />
-            <span class="barra"></span>
-            <label for=""> Email</label>
-          </div>
-          <div class="grupo">
-            <input type="password" name="" id="name" required />
-            <span class="barra"></span>
-            <label for=""> Contraseña </label>
-          </div>
-          <div>
-            <button type="submit">Suscribite</button>
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </main>
-   </body>
+    <footer>
+      Derechos Reservados @2021
+    </footer>
+  </body>
 </html>
